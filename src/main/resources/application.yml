@@ -1,0 +1,16 @@
+server:
+  port: 9001
+
+spring:
+  #连接数据库设置
+  datasource:
+    url: jdbc:mysql://140.143.13.53:3306/patrol?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=UTC
+    username: Xiaoshi
+    password: Xiaoshi
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #jpa设置，显示sql语句，spl语句格式化
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
